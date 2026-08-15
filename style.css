@@ -111,6 +111,7 @@ a {
 .site-nav__cta,
 .button--yellow {
   background: var(--yellow);
+  color: var(--black);
 }
 
 .button--dark {
@@ -1375,15 +1376,19 @@ a {
   text-transform: uppercase;
 }
 
+/* Tags are descriptive, not interactive: ghost styling keeps them from
+   reading as buttons next to the two CTAs above. */
 .yourway-hero__tags li {
-  border: 1px solid rgba(27, 26, 23, 0.08);
-  background: rgba(0, 0, 0, 0.88);
-  color: var(--white);
+  min-height: 30px;
+  border: 1px solid rgba(27, 26, 23, 0.38);
+  background: transparent;
+  color: var(--yourway-ink);
+  font-size: 0.64rem;
 }
 
 .yourway-hero__actions .button--dark {
   background: var(--yourway-orange);
-  color: var(--white);
+  color: var(--yourway-ink);
 }
 
 .yourway-hero__actions .button--dark::after {
@@ -1394,19 +1399,11 @@ a {
   color: currentColor;
 }
 
+/* "You are here" is the current position marker, so it stays filled. */
 .yourway-hero__tags li:nth-child(1) {
-  background: rgba(57, 174, 243, 0.96);
-  color: var(--white);
-}
-
-.yourway-hero__tags li:nth-child(2) {
-  background: rgba(0, 0, 0, 0.96);
-  color: var(--white);
-}
-
-.yourway-hero__tags li:nth-child(3) {
-  background: rgba(226, 255, 53, 0.96);
-  color: var(--yourway-ink);
+  border-color: var(--yourway-ink);
+  background: var(--yourway-ink);
+  color: var(--yourway-lime);
 }
 
 .yourway-hero__image {
@@ -1582,8 +1579,7 @@ a {
   gap: 16px;
 }
 
-.yourway-hero__image .yourway-hero__actions .button,
-.yourway-hero__image .yourway-hero__tags li {
+.yourway-hero__image .yourway-hero__actions .button {
   min-width: min(100%, 360px);
   justify-content: flex-start;
 }
@@ -1604,35 +1600,24 @@ a {
   border-radius: 44px 24px 44px 24px;
 }
 
+/* Compact chip row. Deliberately smaller than the CTA buttons above so the
+   two interactive elements stay the dominant target in the panel. */
 .yourway-hero__image .yourway-hero__tags {
-  display: grid;
-  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin: 0;
 }
 
 .yourway-hero__image .yourway-hero__tags li {
-  min-height: 56px;
-  padding: 0 28px;
-  border: 0;
-  font-size: 0.88rem;
-  letter-spacing: 0.04em;
-}
-
-.yourway-hero__image .yourway-hero__tags li:nth-child(1) {
-  border-radius: 999px 28px 999px 28px;
-}
-
-.yourway-hero__image .yourway-hero__tags li:nth-child(2) {
-  border-radius: 28px 999px 28px 999px;
-}
-
-.yourway-hero__image .yourway-hero__tags li:nth-child(3) {
-  border-radius: 999px;
+  min-height: 34px;
+  padding: 0 16px;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
 }
 
 .yourway-journey,
 .yourway-events,
-.yourway-partners,
 .yourway-form-section,
 .yourway-resources,
 .yourway-faq {
@@ -1642,7 +1627,6 @@ a {
 
 .yourway-journey,
 .yourway-events,
-.yourway-partners,
 .yourway-form-section,
 .yourway-resources {
   padding: 58px 20px;
@@ -1650,7 +1634,6 @@ a {
 
 .yourway-journey__intro,
 .yourway-events__header,
-.yourway-partners__intro,
 .yourway-form-section__intro,
 .yourway-resources {
   display: grid;
@@ -1659,7 +1642,6 @@ a {
 
 .yourway-journey h2,
 .yourway-events h2,
-.yourway-partners h2,
 .yourway-form-section h2,
 .yourway-resources h2 {
   margin: 0;
@@ -1735,7 +1717,6 @@ a {
 .yourway-stop p,
 .yourway-events__note,
 .yourway-board__main p:last-child,
-.yourway-partners__intro p,
 .yourway-form-section__intro p,
 .yourway-resources__copy p,
 .yourway-form__actions p {
@@ -1761,7 +1742,7 @@ a {
 .yourway-region--live {
   background: var(--yourway-blue);
   border-color: var(--yourway-blue);
-  color: var(--white);
+  color: var(--yourway-ink);
 }
 
 .yourway-board {
@@ -1785,23 +1766,25 @@ a {
 
 .yourway-board__row--blue {
   background: var(--yourway-blue);
-  color: var(--white);
+  color: var(--yourway-ink);
   border-radius: 34px 34px 34px 72px;
 }
 
 .yourway-board__row--pink {
   background: var(--yourway-pink);
+  color: var(--yourway-ink);
   border-radius: 34px 72px 34px 34px;
 }
 
 .yourway-board__row--orange {
   background: #ff8a63;
-  color: var(--white);
+  color: var(--yourway-ink);
   border-radius: 72px 34px 34px 34px;
 }
 
 .yourway-board__row--lime {
   background: var(--yourway-lime);
+  color: var(--yourway-ink);
   border-radius: 34px 34px 72px 34px;
 }
 
@@ -1845,6 +1828,23 @@ a {
   z-index: 1;
 }
 
+/* Non-interactive stand-in for a Register button on stops that have no
+   registration URL yet. Dashed + unfilled so it never reads as a CTA.
+   Inherits the row's text colour, which already meets contrast. */
+.yourway-board__pending {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 16px;
+  border: 1px dashed currentColor;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .yourway-pill {
   color: var(--yourway-ink);
 }
@@ -1875,19 +1875,28 @@ a {
 
 .yourway-benefits .support--black {
   background: var(--yourway-orange);
-  color: var(--white);
+  color: var(--yourway-ink);
+}
+
+.yourway-benefits .support__chips span {
+  border-color: rgba(27, 26, 23, 0.24);
+  box-shadow: inset 0 2px 0 0 var(--yourway-ink);
+}
+
+.yourway-benefits .support__note {
+  color: rgba(27, 26, 23, 0.78);
 }
 
 .yourway-benefits__aside {
   position: relative;
   overflow: hidden;
-  color: var(--white);
+  color: var(--yourway-ink);
   background: var(--yourway-blue);
   align-items: flex-start;
 }
 
 .yourway-benefits__aside h2 {
-  color: var(--white);
+  color: var(--yourway-ink);
   margin-bottom: 10px;
   max-width: 10ch;
   font-size: clamp(3.2rem, 5.8vw, 5.8rem);
@@ -1896,12 +1905,12 @@ a {
 
 .yourway-benefits__aside .eyebrow {
   margin-bottom: 12px;
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(27, 26, 23, 0.82);
 }
 
 .yourway-benefits__aside p {
   max-width: 24ch;
-  color: rgba(255, 255, 255, 0.96);
+  color: rgba(27, 26, 23, 0.88);
   font-size: 0.98rem;
   line-height: 1.48;
 }
@@ -1937,73 +1946,6 @@ a {
   flex: 0 0 auto;
 }
 
-.yourway-partners {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 70px;
-}
-
-.yourway-partners::after {
-  content: "";
-  position: absolute;
-  right: 32px;
-  bottom: 8px;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: radial-gradient(circle at center, rgba(57, 174, 243, 0.18) 0%, rgba(57, 174, 243, 0.18) 44%, transparent 45%);
-  pointer-events: none;
-}
-
-.yourway-partners__intro {
-  max-width: 980px;
-}
-
-.yourway-partners__intro h2 {
-  max-width: 13ch;
-}
-
-.yourway-partners__intro p {
-  max-width: 28ch;
-}
-
-.yourway-partners__link {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  margin-top: 30px;
-  min-height: 66px;
-  padding: 0 28px;
-  border-radius: 999px;
-  background: #111111;
-  color: var(--white);
-  font-size: 0.88rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-}
-
-.yourway-partners__link::after {
-  content: "\2192";
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--yourway-orange);
-  color: var(--white);
-  font-size: 1rem;
-  line-height: 1;
-  flex: 0 0 auto;
-}
-
-.yourway-partners__link:hover {
-  transform: translateY(-1px);
-}
-
 .yourway-resources {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2037,10 +1979,17 @@ a {
 
 .yourway-resources__links .yourway-resource:nth-child(2) {
   background: var(--yourway-orange);
+  color: var(--yourway-ink);
 }
 
 .yourway-resources__links .yourway-resource:nth-child(3) {
   background: var(--yourway-pink);
+  color: var(--yourway-ink);
+}
+
+.yourway-resources__links .yourway-resource:nth-child(2) span,
+.yourway-resources__links .yourway-resource:nth-child(3) span {
+  color: rgba(27, 26, 23, 0.78);
 }
 
 .yourway-resource strong {
@@ -2175,12 +2124,12 @@ a {
 
 .partner-panel--pink {
   background: var(--partner-pink);
-  color: var(--white);
+  color: var(--black);
 }
 
 .partner-panel--blue {
   background: var(--partner-blue);
-  color: var(--white);
+  color: var(--black);
 }
 
 .partner-panel--black {
@@ -2248,12 +2197,12 @@ a {
 
 .partner-formats__list span:nth-child(2) {
   background: var(--partner-orange);
-  color: var(--white);
+  color: var(--black);
 }
 
 .partner-formats__list span:nth-child(3) {
   background: var(--partner-blue);
-  color: var(--white);
+  color: var(--black);
 }
 
 .partner-formats__list span:nth-child(4) {
@@ -2333,7 +2282,7 @@ a {
 
 .partner-form__actions .button {
   background: var(--partner-orange);
-  color: var(--white);
+  color: var(--black);
 }
 
 @media (max-width: 1120px) {
@@ -2406,20 +2355,8 @@ a {
     font-size: 3.4rem;
   }
 
-  .yourway-partners {
-    padding-bottom: 42px;
-  }
-
-  .yourway-partners::after {
-    right: -12px;
-    bottom: -10px;
-    width: 110px;
-    height: 110px;
-  }
-
   .yourway-journey,
   .yourway-events,
-  .yourway-partners,
   .yourway-form-section,
   .yourway-resources {
     padding: 36px 16px;
