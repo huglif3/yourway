@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner Application - Find your way</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="partner-page">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Find your way home">
+      <img class="brand__logo" src="../assets/event-icon.png" alt="HackMeridian 2026 Lisbon" />
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="/#events">Events</a>
+      <a href="/#journey">Journey</a>
+      <a href="#apply">Apply</a>
+      <a class="site-nav__cta" href="/">Back to route</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="partner-hero">
+      <div class="partner-hero__inner">
+        <div class="partner-hero__copy">
+          <p class="eyebrow">Host the journey</p>
+          <h1>Bring your city onto the map.</h1>
+          <p class="partner-hero__lede">
+            Partners host regional activations that create local builder
+            momentum and feed qualified talent into HackMeridian.
+          </p>
+          <p class="partner-hero__meta">
+            Community-led activations · September-October 2026
+          </p>
+        </div>
+        <div class="partner-hero__card">
+          <p>Best fit</p>
+          <strong>Developer communities, campus groups, founder networks, and local ecosystem operators.</strong>
+          <span>Submit your activation proposal and tell us how you will convene builders in your city.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner-overview">
+      <div class="partner-overview__intro">
+        <p class="eyebrow">What this page covers</p>
+        <h2>Everything needed to host the route.</h2>
+      </div>
+      <div class="partner-overview__grid">
+        <article class="partner-panel partner-panel--pink">
+          <h3>What partners receive</h3>
+          <ul>
+            <li>Branding support</li>
+            <li>Curriculum and session framing</li>
+            <li>Co-marketing support</li>
+            <li>Technical mentor coverage</li>
+            <li>Grant pathway context</li>
+          </ul>
+        </article>
+        <article class="partner-panel partner-panel--blue">
+          <h3>What partners deliver</h3>
+          <ul>
+            <li>Local venue or community distribution</li>
+            <li>Strong RSVP and show-up rate</li>
+            <li>Participant emails and follow-up</li>
+            <li>GitHub repos or project links</li>
+            <li>Short event retro and outcomes</li>
+          </ul>
+        </article>
+        <article class="partner-panel partner-panel--black">
+          <h3>Who should apply</h3>
+          <ul>
+            <li>Developer communities</li>
+            <li>Campus groups</li>
+            <li>Founder networks</li>
+            <li>Ecosystem operators</li>
+            <li>Experienced local event hosts</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="partner-formats">
+      <div class="partner-formats__copy">
+        <p class="eyebrow">Activation formats</p>
+        <h2>Choose the format that fits your city.</h2>
+        <p>
+          We are supporting virtual workshops, hack nights, founder meetups,
+          campus events, and after-work community sessions.
+        </p>
+      </div>
+      <div class="partner-formats__list">
+        <span>Virtual workshop</span>
+        <span>Hack night</span>
+        <span>Founder meetup</span>
+        <span>Campus event</span>
+        <span>After-work happy hour</span>
+      </div>
+    </section>
+
+    <section class="partner-apply" id="apply">
+      <div class="partner-apply__intro">
+        <p class="eyebrow">Partner application</p>
+        <h2>Submit your activation proposal.</h2>
+        <p>
+          This version can collect all application details in one place now.
+          Storage and delivery can be upgraded later without changing the
+          content structure.
+        </p>
+      </div>
+
+      <form
+        class="partner-form"
+        action="mailto:meridian@growwithguava.com?subject=Road%20to%20Lisbon%20Partner%20Application"
+        method="post"
+        enctype="text/plain"
+      >
+        <label>
+          Organization name
+          <input type="text" name="Organization name" required />
+        </label>
+        <label>
+          Contact full name
+          <input type="text" name="Contact full name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="Email" required />
+        </label>
+        <label>
+          Phone or WhatsApp
+          <input type="text" name="Phone or WhatsApp" />
+        </label>
+        <label>
+          Country
+          <input type="text" name="Country" required />
+        </label>
+        <label>
+          City
+          <input type="text" name="City" required />
+        </label>
+        <label>
+          Organization type
+          <input type="text" name="Organization type" placeholder="Community, campus, founder network, studio..." />
+        </label>
+        <label>
+          Preferred activation format
+          <select name="Preferred activation format" required>
+            <option value="">Select one</option>
+            <option>Virtual workshop</option>
+            <option>Hack night</option>
+            <option>Founder meetup</option>
+            <option>Campus event</option>
+            <option>After-work happy hour</option>
+          </select>
+        </label>
+        <label>
+          Proposed event date or range
+          <input type="text" name="Proposed event date or range" placeholder="Example: Week of October 12" />
+        </label>
+        <label>
+          Expected attendee count
+          <input type="text" name="Expected attendee count" />
+        </label>
+        <label class="partner-form__full">
+          Who is your target audience?
+          <textarea name="Target audience" rows="3"></textarea>
+        </label>
+        <label class="partner-form__full">
+          Why are you a strong host for this activation?
+          <textarea name="Why are you a strong host?" rows="4" required></textarea>
+        </label>
+        <label class="partner-form__full">
+          What local distribution or community channels do you have?
+          <textarea name="Distribution channels" rows="3"></textarea>
+        </label>
+        <label class="partner-form__full">
+          What support do you need from Guava and Stellar?
+          <textarea name="Support needed" rows="3"></textarea>
+        </label>
+        <label class="partner-form__full">
+          Can you capture participant emails, GitHub repos, and a post-event retro?
+          <textarea name="Reporting capability" rows="3"></textarea>
+        </label>
+        <label class="partner-form__full">
+          Website, social link, or past event page
+          <input type="url" name="Reference link" placeholder="https://..." />
+        </label>
+        <div class="partner-form__actions partner-form__full">
+          <p>
+            Submit opens an email draft to
+            <strong>meridian@growwithguava.com</strong> until backend storage is connected.
+          </p>
+          <button class="button button--dark" type="submit">Send application</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="site-footer__logo" src="../assets/event-icon.png" alt="HackMeridian 2026 Lisbon" />
+    <nav class="site-footer__nav" aria-label="Footer">
+      <a href="/">Find your way</a>
+      <a href="#apply">Apply</a>
+    </nav>
+    <div class="site-footer__meta">
+      <span>2026 HackMeridian. All rights reserved.</span>
+      <a href="mailto:meridian@growwithguava.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
