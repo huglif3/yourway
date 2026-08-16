@@ -111,7 +111,8 @@
 
       <form
         class="partner-form"
-        action="mailto:meridian@growwithguava.com?subject=Road%20to%20Lisbon%20Partner%20Application"
+        id="partner-form"
+        action="mailto:meridian@growwithguava.com"
         method="post"
         enctype="text/plain"
       >
@@ -208,5 +209,38 @@
       <a href="mailto:meridian@growwithguava.com">Contact</a>
     </div>
   </footer>
+
+  <!--
+    Posting a form to a mailto: URL is not interoperable — browsers disagree
+    on whether the body is sent at all, and a ?subject= in the action is
+    dropped on POST. Build the draft ourselves so the subject and every
+    answer survive. The plain form action stays as the no-JS fallback.
+  -->
+  <script>
+    (function () {
+      var form = document.getElementById('partner-form');
+      if (!form) return;
+
+      var TO = 'meridian@growwithguava.com';
+      var SUBJECT = 'Road to Lisbon Partner Application';
+
+      form.addEventListener('submit', function (event) {
+        if (!form.reportValidity()) return;
+        event.preventDefault();
+
+        var lines = [];
+        new FormData(form).forEach(function (value, key) {
+          var answer = String(value).trim();
+          lines.push(key + ':\n' + (answer || '—') + '\n');
+        });
+
+        window.location.assign(
+          'mailto:' + TO +
+          '?subject=' + encodeURIComponent(SUBJECT) +
+          '&body=' + encodeURIComponent(lines.join('\n'))
+        );
+      });
+    })();
+  </script>
 </body>
 </html>
