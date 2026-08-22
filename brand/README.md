@@ -16,8 +16,8 @@ swap. Interim decisions below hold until the designer overrides them.
 
 | Decision | Choice | Why |
 | --- | --- | --- |
-| Web typeface | **Archivo** (Google Fonts, 400–900) | The brand face is unrecoverable from the outlined PDFs; Archivo matches the heavy/tight wordmark and the light/wide headings. One-line swap when the real family lands. |
-| Region map | River = UK/France · Terracotta = Spain · Gold = Portugal (home) · Jacaranda = Vietnam/SEA | Geographic order also keeps the CVD-weak Jacaranda/River pair non-adjacent on the route map (validated). Black and White remain unassigned — candidates for Germany/Poland when those routes open. |
+| Web typeface | ~~Archivo~~ → **Inter Tight** (Google Fonts) | **Resolved.** The umbrella HackMeridian Brand Guide (in `hackmeridian-com`) mandates one font, Inter Tight — which matches the campaign guide's light wide grotesque exactly. Applied. |
+| Region map | River = UK/France · Terracotta = Spain · Gold = Portugal (home) · Jacaranda = Vietnam/SEA | Geographic order also keeps the CVD-weak Jacaranda/River pair non-adjacent on the route map (validated). Black and White remain unassigned — candidates for **Buenos Aires and Mexico City**, the next listed markets (team decision, Aug 2026). |
 | Gold as chart/mark colour | Only on black panels | Gold is 1.34:1 against white — invisible as a mark on light ground; 15.2:1 on black. |
 | Status colours | Gold = confirmed/live · white outline = seeking · gray outline = scheduling | The brand has no green; gold is the positive state, and labels carry the meaning. |
 
@@ -154,15 +154,17 @@ variants always offer one of each.
 
 ## Open questions
 
-1. **Typeface.** Text in the PDFs is converted to outlines (Type3), so the
-   family name is not recoverable from the files. The cover wordmark is heavy
-   and tight; section headings are a light, wide grotesque. Need the family
-   and how it is licensed for web — self-hosted, Adobe Fonts, or a Google
-   Fonts substitute.
-2. **Spain's region colour.** Spain is the only live route and needs one of
-   the six assigned.
-3. ~~**Date conflict.**~~ **Resolved** — see Schedule below. `ONE16` still
-   looks like a venue and appears nowhere in the brief; confirm it.
+1. ~~**Typeface.**~~ **Resolved: Inter Tight** — mandated by the umbrella
+   HackMeridian Brand Guide (`hackmeridian-com` repo), free on Google Fonts.
+   Note the register split: umbrella headlines run Light (300); the YOUR WAY
+   campaign cover runs heavy. Campaign surfaces keep the heavy display.
+   Flag: the main site's own `style.css` still ships Instrument Sans against
+   its own guide.
+2. ~~**Spain's region colour.**~~ **Resolved: Terracotta** (interim mapping,
+   applied to the chip and the activation board).
+3. ~~**Date conflict.**~~ **Resolved** — see Schedule below. ~~`ONE16`~~ also
+   resolved: the venue is **ONE**, a former railway warehouse in Marvila
+   (oneyourfirststop.com), per the master copy doc.
 4. **Logo.** `assets/event-icon.png` is the site's only image asset and is
    still the old mark. The templates use an "M" chevron in gold plus a play
    triangle. Need those as web assets if they are to ship.
