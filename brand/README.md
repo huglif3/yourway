@@ -7,8 +7,19 @@ from it plus the delivered assets.
 
 ## Status
 
-The site has **not** been re-branded yet. `style.css` still carries the old
-palette. Everything below is recorded, not applied.
+**Applied.** The site (`style.css`) and both campaign artifacts (the Find Your
+Way page and the Travel Grants policy) now run on this identity. Zero WCAG AA
+contrast failures on every surface, light and dark, re-verified after the
+swap. Interim decisions below hold until the designer overrides them.
+
+### Interim decisions (designer can veto)
+
+| Decision | Choice | Why |
+| --- | --- | --- |
+| Web typeface | **Archivo** (Google Fonts, 400–900) | The brand face is unrecoverable from the outlined PDFs; Archivo matches the heavy/tight wordmark and the light/wide headings. One-line swap when the real family lands. |
+| Region map | River = UK/France · Terracotta = Spain · Gold = Portugal (home) · Jacaranda = Vietnam/SEA | Geographic order also keeps the CVD-weak Jacaranda/River pair non-adjacent on the route map (validated). Black and White remain unassigned — candidates for Germany/Poland when those routes open. |
+| Gold as chart/mark colour | Only on black panels | Gold is 1.34:1 against white — invisible as a mark on light ground; 15.2:1 on black. |
+| Status colours | Gold = confirmed/live · white outline = seeking · gray outline = scheduling | The brand has no green; gold is the positive state, and labels carry the meaning. |
 
 ## Colour
 

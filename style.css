@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap");
 
 :root {
   /* ------------------------------------------------------------------
@@ -7,29 +7,34 @@
      else. The *-rgb channels exist so translucent surfaces can be built
      with rgb(var(--x-rgb) / <alpha>) instead of a frozen rgba() literal.
      ------------------------------------------------------------------ */
-  --brand-yellow: #f8d423;
-  --brand-yellow-deep: #f0c617;
-  --brand-lime: #e2ff35;
-  --brand-pink: #ef9bd0;
-  --brand-blue: #39aef3;
-  --brand-orange: #ff7a00;
-  --brand-coral: #ff8a63;
-  /* Brand orange only reaches 2.6:1 on white; this cast clears AA at 4.8:1. */
-  --brand-orange-ink: #b85700;
+  /* FIND YOUR WAY 2026 (Figma: HackMeridian-2026 / 4415-2).
+     Core: Generous Gold, Black, White; Gray is structural only.
+     Region colours identify regions and nothing else —
+     Spain=Terracotta, Portugal=Gold, UK/France=River, Vietnam/SEA=Jacaranda. */
+  --brand-yellow: #fdda24;
+  --brand-yellow-deep: #d7b91f;
+  --brand-lime: #fdda24;
+  --brand-pink: #b2b2b2;
+  --brand-blue: #000000;
+  --brand-orange: #fdda24;
+  --brand-coral: #fdda24;
+  /* Muted label cast for numbered legends on light grounds (6.3:1 on white). */
+  --brand-orange-ink: #63605a;
+  --region-spain: #d45c39;
 
-  --ink: #1b1a17;
+  --ink: #0b0b0a;
   --surface-dark: #111111;
   --surface-tint: #fffdf8;
   --surface-tint-warm: #fffdf7;
   --surface-tint-cream: #fff9ea;
   --body-muted: #444444;
 
-  --brand-yellow-rgb: 248 212 35;
-  --brand-blue-rgb: 57 174 243;
-  --brand-pink-rgb: 239 155 208;
-  --brand-lime-rgb: 226 255 53;
-  --brand-orange-rgb: 255 122 0;
-  --ink-rgb: 27 26 23;
+  --brand-yellow-rgb: 253 218 36;
+  --brand-blue-rgb: 0 0 0;
+  --brand-pink-rgb: 178 178 178;
+  --brand-lime-rgb: 253 218 36;
+  --brand-orange-rgb: 253 218 36;
+  --ink-rgb: 11 11 10;
   --black-rgb: 5 5 5;
   --white-rgb: 255 255 255;
   --pure-black-rgb: 0 0 0;
@@ -59,7 +64,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Instrument Sans", sans-serif;
+  font-family: "Archivo", sans-serif;
   background: var(--white);
   color: var(--black);
 }
@@ -1381,7 +1386,7 @@ a {
 
 .yourway-hero__actions .button--yellow {
   color: var(--yourway-ink);
-  background: var(--yourway-lime);
+  background: var(--white);
 }
 
 .yourway-hero__tags {
@@ -1420,8 +1425,8 @@ a {
 }
 
 .yourway-hero__actions .button--dark {
-  background: var(--yourway-orange);
-  color: var(--yourway-ink);
+  background: #000000;
+  color: var(--brand-yellow);
 }
 
 .yourway-hero__actions .button--dark::after {
@@ -1446,7 +1451,7 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 42px 34px 34px;
-  background: linear-gradient(180deg, var(--yourway-pink) 0%, var(--brand-pink) 100%);
+  background: var(--brand-yellow);
 }
 
 .yourway-hero__board {
@@ -1705,7 +1710,7 @@ a {
   height: 8px;
   border-radius: 999px;
   background:
-    linear-gradient(90deg, var(--yourway-blue) 0%, var(--yourway-blue) 18%, var(--yourway-pink) 18%, var(--yourway-pink) 42%, var(--yourway-orange) 42%, var(--yourway-orange) 66%, var(--yourway-lime) 66%, var(--yourway-lime) 100%);
+    linear-gradient(90deg, var(--brand-yellow) 0%, var(--brand-yellow) 100%);
 }
 
 .yourway-stop {
@@ -1725,9 +1730,9 @@ a {
 }
 
 .yourway-stop--active .yourway-stop__dot {
-  background: var(--yourway-blue);
-  border-color: var(--yourway-blue);
-  box-shadow: 0 0 0 8px rgb(var(--brand-blue-rgb) / 0.18);
+  background: var(--brand-yellow);
+  border-color: var(--yourway-ink);
+  box-shadow: 0 0 0 8px rgb(var(--brand-yellow-rgb) / 0.3);
 }
 
 .yourway-stop__label,
@@ -1773,9 +1778,9 @@ a {
 }
 
 .yourway-region--live {
-  background: var(--yourway-blue);
-  border-color: var(--yourway-blue);
-  color: var(--yourway-ink);
+  background: var(--region-spain);
+  border-color: var(--region-spain);
+  color: #000000;
 }
 
 .yourway-board {
@@ -1893,8 +1898,8 @@ a {
 
 .yourway-board__row--soon {
   grid-template-columns: minmax(0, 1fr) auto;
-  background: var(--yourway-lime);
-  color: var(--yourway-ink);
+  background: var(--region-spain);
+  color: #000000;
   border-radius: 34px 34px 72px 34px;
 }
 
@@ -1902,10 +1907,9 @@ a {
   max-width: 56ch;
 }
 
-/* Yellow on lime reads as one flat shape; go dark for separation. */
 .yourway-board__row--soon .button--yellow {
-  background: var(--yourway-ink);
-  color: var(--yourway-lime);
+  background: #000000;
+  color: var(--brand-yellow);
 }
 
 /* Non-interactive stand-in for a Register button on stops that have no
@@ -1954,8 +1958,8 @@ a {
 }
 
 .yourway-benefits .support--black {
-  background: var(--yourway-orange);
-  color: var(--yourway-ink);
+  background: var(--brand-yellow);
+  color: #000000;
 }
 
 .yourway-benefits .support__chips span {
@@ -1970,13 +1974,13 @@ a {
 .yourway-benefits__aside {
   position: relative;
   overflow: hidden;
-  color: var(--yourway-ink);
-  background: var(--yourway-blue);
+  color: var(--white);
+  background: #000000;
   align-items: flex-start;
 }
 
 .yourway-benefits__aside h2 {
-  color: var(--yourway-ink);
+  color: var(--white);
   margin-bottom: 10px;
   max-width: 10ch;
   font-size: clamp(3.2rem, 5.8vw, 5.8rem);
@@ -1985,12 +1989,12 @@ a {
 
 .yourway-benefits__aside .eyebrow {
   margin-bottom: 12px;
-  color: rgb(var(--ink-rgb) / 0.82);
+  color: var(--brand-yellow);
 }
 
 .yourway-benefits__aside p {
   max-width: 24ch;
-  color: rgb(var(--ink-rgb) / 0.88);
+  color: rgb(var(--white-rgb) / 0.85);
   font-size: 0.98rem;
   line-height: 1.48;
 }
@@ -2003,8 +2007,8 @@ a {
   min-height: 66px;
   padding: 0 26px;
   border-radius: 999px;
-  background: var(--surface-dark);
-  color: var(--white);
+  background: var(--brand-yellow);
+  color: #000000;
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -2094,8 +2098,8 @@ a {
   --partner-ink: var(--surface-dark);
   --partner-orange-ink: var(--brand-orange-ink);
   background:
-    radial-gradient(circle at 18% 10%, rgb(var(--brand-blue-rgb) / 0.12), transparent 18%),
-    radial-gradient(circle at 86% 16%, rgb(var(--brand-pink-rgb) / 0.14), transparent 18%),
+    radial-gradient(circle at 18% 10%, rgb(var(--brand-yellow-rgb) / 0.14), transparent 18%),
+    radial-gradient(circle at 86% 16%, rgb(var(--brand-yellow-rgb) / 0.1), transparent 18%),
     linear-gradient(180deg, var(--surface-tint) 0%, var(--white) 100%);
 }
 
@@ -2216,7 +2220,8 @@ a {
 }
 
 .partner-panel--blue {
-  background: var(--partner-blue);
+  background: var(--white);
+  border: 1px solid rgb(var(--ink-rgb) / 0.2);
   color: var(--black);
 }
 
@@ -2290,7 +2295,7 @@ a {
 
 .partner-formats__list span:nth-child(3) {
   background: var(--partner-blue);
-  color: var(--black);
+  color: var(--white);
 }
 
 .partner-formats__list span:nth-child(4) {
@@ -2572,7 +2577,16 @@ a {
 }
 
 .partner-track--scale {
-  background: var(--partner-blue);
+  background: #000000;
+  color: var(--white);
+}
+
+.partner-track--scale .partner-track__prize {
+  border-top-color: rgb(var(--white-rgb) / 0.3);
+}
+
+.partner-track--scale .partner-track__name {
+  color: var(--brand-yellow);
 }
 
 .partner-track h3 {
