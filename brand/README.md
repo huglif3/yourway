@@ -73,9 +73,11 @@ detached masters · a second CTA.
 
 ### Template layout
 
-1080 × 1080. Artwork fills the top ~72%; a black information bar runs across
-the bottom ~28% carrying items 01–05. The region colour and the knocked-out
-wordmark fragment live in the artwork; all copy sits on the black bar.
+1080 × 1080. A black information bar runs the full width of one long edge —
+280pt, ~26% — carrying items 01–05; artwork takes the remaining ~74%. Which
+edge depends on the piece (see *Two bar positions* below). The region colour
+and the knocked-out wordmark fragment live in the artwork; all copy sits on
+the black bar, never over the image.
 
 Type scale measured on the 1080pt canvas:
 
@@ -92,25 +94,52 @@ event title is a light weight; the CTA is bold.
 
 ## Delivered pieces
 
-`pieces/` holds 20 PDFs, `pieces/preview/` a 720px PNG of each.
+`pieces/` holds 24 PDFs (29–52, no gaps), `pieces/preview/` a 720px PNG of
+each.
 
-**Artwork only** — 29 · 30 · 31 · 32 · 33 · 35 · 36 · 37 · 38 · 39
-**Full event templates** — 41 · 42 · 43 · 44 · 45 · 47 · 48 · 49 · 50 · 51
+**12 artwork masters** (29–40) and **12 event templates** (41–52) — six
+regions, two variants each, in both kinds.
 
-| Piece | Fragment | Region | Piece | Fragment | Region |
-| --- | --- | --- | --- | --- | --- |
-| 29 | M | Gold | 41 | — | Gold |
-| 30 | MER | Terracotta | 42 | M | Black |
-| 31 | RI | Jacaranda | 43 | — | Terracotta |
-| 32 | DI | Black | 44 | MER | Gold |
-| 33 | IA | River | 45 | — | Jacaranda |
-| 35 | M | Black | 47 | — | River |
-| 36 | MER | Gold | 48 | IA | Jacaranda |
-| 37 | RI | River | 49 | — | Black |
-| 38 | IA | Jacaranda | 50 | DI | White |
-| 39 | DI | White | 51 | — | White |
+| Piece | Fragment | Region | | Piece | Fragment | Region |
+| --- | --- | --- | --- | --- | --- | --- |
+| 29 | M | Gold R01 | | 41 | — | Gold R01 |
+| 30 | MER | Terracotta R04 | | 42 | M | Black R05 |
+| 31 | RI | Jacaranda R02 | | 43 | — | Terracotta R04 |
+| 32 | DI | Black R05 | | 44 | MER | Gold R01 |
+| 33 | IA | River R03 | | 45 | — | Jacaranda R02 |
+| 34 | AN | White R06 | | 46 | RI | River R03 |
+| 35 | M | Black R05 | | 47 | — | River R03 |
+| 36 | MER | Gold R01 | | 48 | IA | Jacaranda R02 |
+| 37 | RI | River R03 | | 49 | — | Black R05 |
+| 38 | IA | Jacaranda R02 | | 50 | DI | White R06 |
+| 39 | DI | White R06 | | 51 | — | White R06 |
+| 40 | AN | Terracotta R04 | | 52 | AN | Terracotta R04 |
 
-Not delivered: 34, 40, 46.
+Artwork sets 29–34 and 35–40 each cover all six regions. The templates pair
+across their two sets, giving two per region: Gold 41/44, Jacaranda 45/48,
+River 46/47, Terracotta 43/52, Black 42/49, White 50/51.
+
+### The fragment is not an event code
+
+Six wordmark fragments — `M · MER · RI · DI · IA · AN` — spell MERIDIAN. The
+same fragment appears in **different regions** across sets: `M` is Gold in
+piece 29 and Black in piece 35; `MER` is Terracotta in 30 and Gold in 36.
+
+So the fragment marks crop position only. Region is carried by colour and the
+event by its piece number — which is exactly why the guide says *don't use the
+wordmark fragment as an event code*. The delivery bears the rule out.
+
+### Two bar positions, alternating
+
+Every template puts the black information bar on one long edge, 280pt of 1080
+(~26%), with the artwork taking the rest. It alternates strictly by piece
+number:
+
+- **Odd pieces — bar at the top.** Copy begins 56pt from the top edge.
+- **Even pieces — bar at the bottom.** Copy begins 836pt down.
+
+Holds across all twelve templates without exception, so a region's two
+variants always offer one of each.
 
 ## Open questions
 
@@ -121,14 +150,32 @@ Not delivered: 34, 40, 46.
    Fonts substitute.
 2. **Spain's region colour.** Spain is the only live route and needs one of
    the six assigned.
-3. **Date conflict.** The guide's Destination card reads
-   *HackMeridian 2026 · Oct 25–26 · ONE16*. The Activation Partner Brief says
-   *October 25–27, 2026*, which is what the partner page currently states.
-   `ONE16` looks like a venue and does not appear in the brief.
+3. ~~**Date conflict.**~~ **Resolved** — see Schedule below. `ONE16` still
+   looks like a venue and appears nowhere in the brief; confirm it.
 4. **Logo.** `assets/event-icon.png` is the site's only image asset and is
    still the old mark. The templates use an "M" chevron in gold plus a play
    triangle. Need those as web assets if they are to ship.
-5. **Missing pieces** 34, 40, 46 — intentional gaps or still to come?
+5. **Region 06 is White.** On a white page the artwork has no edge of its
+   own — piece 51 relies entirely on the black bar and the photographic
+   knockout for definition. If White is used on the site, those surfaces need
+   a border or an off-white ground to hold their shape.
+
+## Schedule
+
+Confirmed by the team, and it supersedes the apparent conflict between the
+guide and the brief — they were describing different things.
+
+| Date | What | Who |
+| --- | --- | --- |
+| **Oct 25–26** | HackMeridian — the hackathon itself | All participants |
+| **Oct 27** | Suggested extra day, learning sessions | Optional; aimed at grantees |
+| **Oct 28** | Meridian day 1 | **Mandatory for grantees** |
+| **Oct 29** | Meridian day 2 | Recommended |
+
+So the guide's *Oct 25–26* is the hackathon proper, and the brief's
+*October 25–27* folds in the suggested third day. Both are right about
+different spans — copy should say which it means rather than give a bare
+range.
 
 ## Conflicts with the current site
 

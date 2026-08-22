@@ -2920,3 +2920,39 @@ a {
     padding: 36px 16px;
   }
 }
+
+.partner-schedule {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partner-schedule li {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 14px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid rgb(var(--ink-rgb) / 0.14);
+}
+
+.partner-schedule strong {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.partner-schedule span {
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 620px) {
+  .partner-schedule li {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+}
