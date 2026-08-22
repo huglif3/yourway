@@ -333,190 +333,29 @@
         <p class="partner-apply__sla">Reviewed within 5 business days.</p>
       </div>
 
-      <form
-        class="partner-form"
-        id="partner-form"
-        action="mailto:meridian@growwithguava.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <fieldset class="partner-form__full">
-          <legend>Your organization</legend>
-          <div class="partner-form__grid">
-            <label>
-              Organization name
-              <input type="text" name="Organization name" required />
-            </label>
-            <label>
-              Contact full name
-              <input type="text" name="Contact full name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" name="Email" required />
-            </label>
-            <label>
-              Phone or WhatsApp
-              <input type="text" name="Phone or WhatsApp" />
-            </label>
-            <label>
-              Country
-              <input type="text" name="Country" required />
-            </label>
-            <label>
-              City
-              <input type="text" name="City" required />
-            </label>
-            <label class="partner-form__full">
-              Website, social link, or past event page
-              <input type="url" name="Reference link" placeholder="https://..." />
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>01 · Your target community</legend>
-          <label class="partner-form__full">
-            Who exactly is your target community?
-            <span class="partner-form__hint">
-              Name the specific group, not a generic category. "Fintech engineers
-              from the neobanking sector", not "developers in London".
-            </span>
-            <textarea name="01 Target community" rows="4" required></textarea>
-          </label>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>02 · Track</legend>
-          <div class="partner-form__grid">
-            <label>
-              Which track are you targeting?
-              <select name="02 Track" required>
-                <option value="">Select one</option>
-                <option>Genesis</option>
-                <option>Scale</option>
-                <option>Both</option>
-              </select>
-            </label>
-            <label>
-              Which campaign beat does this activation land on?
-              <select name="Campaign beat" required>
-                <option value="">Select one</option>
-                <option>Find your people — community / founder event</option>
-                <option>Find your stack — technical workshop</option>
-                <option>Find your idea — ideation</option>
-                <option>Find your team — matchmaking / hack night</option>
-                <option>Find your edge — advanced / mentorship</option>
-                <option>Find your next move — mini-hack / registration</option>
-              </select>
-            </label>
-          </div>
-          <label class="partner-form__full">
-            Why does your community map to that track?
-            <textarea name="02 Why this track" rows="3" required></textarea>
-          </label>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>03 · Format</legend>
-          <label class="partner-form__full">
-            What format are you running?
-            <select name="03 Format" required>
-              <option value="">Select one</option>
-              <option>Mini-Hack Weekend</option>
-              <option>IRL Event Series</option>
-              <option>Scale Founder Evening</option>
-            </select>
-          </label>
-          <label class="partner-form__full">
-            Why is it right for this audience?
-            <textarea name="03 Why this format" rows="3" required></textarea>
-          </label>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>04 · Qualification moment</legend>
-          <label class="partner-form__full">
-            What separates serious builders from curious observers?
-            <span class="partner-form__hint">
-              For example a project pitch, a scoped-idea form, a three-minute
-              team standup, or a prototype demo.
-            </span>
-            <textarea name="04 Qualification moment" rows="3" required></textarea>
-          </label>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>05 · Conversion moment</legend>
-          <label class="partner-form__full">
-            What is your specific, tracked ask for HackMeridian registration, and when does it happen?
-            <span class="partner-form__hint">
-              It has to be live in the room — a QR code on screen, a link in
-              chat, a verbal ask with a deadline.
-            </span>
-            <textarea name="05 Conversion moment" rows="3" required></textarea>
-          </label>
-          <label class="partner-form__full partner-form__check">
-            <input type="checkbox" name="48-hour follow-up committed" value="Yes" required />
-            <span>
-              We commit to sending every attendee the registration link, travel
-              grant info, and next steps within 48 hours.
-            </span>
-          </label>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>06 · Content and facilitator</legend>
-          <label class="partner-form__full">
-            Which content modules from Guava's library will you use?
-            <textarea name="06 Content modules" rows="3" required></textarea>
-          </label>
-          <label class="partner-form__full">
-            Who is your local, native-language facilitator?
-            <span class="partner-form__hint">Name, background, and the language they will deliver in.</span>
-            <textarea name="06 Facilitator" rows="3" required></textarea>
-          </label>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>07 · KPI targets</legend>
-          <div class="partner-form__grid">
-            <label>
-              Target attendance
-              <input type="text" name="07 Target attendance" required />
-            </label>
-            <label>
-              Target qualified builders
-              <input type="text" name="07 Target qualified builders" required />
-            </label>
-            <label>
-              Target HackMeridian registrations
-              <input type="text" name="07 Target registrations" required />
-            </label>
-            <label>
-              Target applications submitted
-              <input type="text" name="07 Target applications" required />
-            </label>
-          </div>
-        </fieldset>
-
-        <fieldset class="partner-form__full">
-          <legend>08 · Dates</legend>
-          <label class="partner-form__full">
-            Specific dates
-            <span class="partner-form__hint">Example: 12-13 October 2026, or a firm week if the venue is not locked.</span>
-            <input type="text" name="08 Dates" required />
-          </label>
-        </fieldset>
-
-        <div class="partner-form__actions partner-form__full">
-          <p>
-            Submit opens an email draft to
-            <strong>meridian@growwithguava.com</strong> until backend storage is connected.
-          </p>
-          <button class="button button--dark" type="submit">Send proposal</button>
-        </div>
-      </form>
+      <div class="partner-embed">
+        <p class="partner-embed__notice">
+          Applications are collected by <strong>Guava Global</strong> (data
+          controller) to assess activation partnerships, and are stored in
+          Notion, our processor. Questions or withdrawal:
+          <a href="mailto:meridian@growwithguava.com">meridian@growwithguava.com</a>.
+          See our privacy notice for details.
+        </p>
+        <iframe
+          class="partner-embed__frame"
+          src="https://growwithguava.notion.site/ebd//55abe4273a4c4c24ae24e42affe1313b?v=3c465b4bc7e4814da503000c89299a80"
+          title="Activation partner application form"
+          width="100%"
+          height="600"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+        <p class="partner-embed__alt">
+          Form not loading?
+          <a href="https://growwithguava.notion.site/55abe4273a4c4c24ae24e42affe1313b?v=3c465b4bc7e4814da503000c89299a80"
+             target="_blank" rel="noopener">Open the application in a new tab</a>
+        </p>
+      </div>
     </section>
 
     <section class="partner-next" id="next">
@@ -553,45 +392,5 @@
     </div>
   </footer>
 
-  <!--
-    Posting a form to a mailto: URL is not interoperable — browsers disagree
-    on whether the body is sent at all, and a ?subject= in the action is
-    dropped on POST. Build the draft ourselves so the subject and every
-    answer survive. The plain form action stays as the no-JS fallback.
-  -->
-  <script>
-    (function () {
-      var form = document.getElementById('partner-form');
-      if (!form) return;
-
-      var TO = 'meridian@growwithguava.com';
-      var SUBJECT = 'Find Your Way — Activation Partner Proposal';
-
-      form.addEventListener('submit', function (event) {
-        if (!form.reportValidity()) return;
-        event.preventDefault();
-
-        var answered = {};
-        new FormData(form).forEach(function (value, key) {
-          answered[key] = String(value).trim();
-        });
-
-        // Unchecked boxes and untouched fields never reach FormData, so walk
-        // the controls instead to keep the draft's question order intact.
-        var lines = [];
-        Array.prototype.forEach.call(form.elements, function (field) {
-          if (!field.name || field.type === 'submit') return;
-          if (lines.some(function (l) { return l.indexOf(field.name + ':') === 0; })) return;
-          lines.push(field.name + ':\n' + (answered[field.name] || '—') + '\n');
-        });
-
-        window.location.assign(
-          'mailto:' + TO +
-          '?subject=' + encodeURIComponent(SUBJECT) +
-          '&body=' + encodeURIComponent(lines.join('\n'))
-        );
-      });
-    })();
-  </script>
 </body>
 </html>

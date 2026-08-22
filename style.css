@@ -2970,3 +2970,40 @@ a {
     gap: 4px;
   }
 }
+
+/* Notion application form embed (ADR 0004). The frame is cross-origin —
+   height comes from us, scrolling happens inside the form. */
+.partner-embed {
+  display: grid;
+  gap: 14px;
+}
+
+.partner-embed__notice {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: rgb(var(--ink-rgb) / 0.78);
+  max-width: 62ch;
+}
+
+.partner-embed__notice a,
+.partner-embed__alt a {
+  text-decoration: underline;
+  text-decoration-color: var(--brand-yellow);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.partner-embed__frame {
+  width: 100%;
+  height: clamp(600px, 78vh, 900px);
+  border: 1px solid rgb(var(--ink-rgb) / 0.16);
+  border-radius: 28px;
+  background: var(--white);
+}
+
+.partner-embed__alt {
+  margin: 0;
+  font-size: 0.82rem;
+  color: rgb(var(--ink-rgb) / 0.78);
+}
