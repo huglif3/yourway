@@ -1389,6 +1389,23 @@ a {
   background: var(--white);
 }
 
+/* One action per piece: Find an event is the CTA, hosting is a link. */
+.yourway-hero__alt {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--yourway-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--yourway-ink);
+}
+
 .yourway-hero__tags {
   display: flex;
   flex-wrap: wrap;
