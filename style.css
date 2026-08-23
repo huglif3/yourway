@@ -246,7 +246,7 @@ a {
 
 .eyebrow {
   margin: 0 0 18px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.28em;
@@ -1092,7 +1092,7 @@ a {
   gap: 24px;
   padding: 26px 20px;
   background: var(--yellow);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
 }
 
 .site-footer__nav {
@@ -1178,7 +1178,7 @@ a {
 
   .site-nav {
     gap: 12px;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .hero__inner {
@@ -1278,7 +1278,7 @@ a {
 
   .track__tag {
     margin-top: 20px;
-    font-size: 0.68rem;
+    font-size: 0.7rem;
   }
 
   .program-divider {
@@ -1408,7 +1408,7 @@ a {
   min-height: 34px;
   padding: 0 14px;
   border-radius: var(--radius-pill);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1421,7 +1421,7 @@ a {
   border: 1px solid rgb(var(--ink-rgb) / 0.38);
   background: transparent;
   color: var(--yourway-ink);
-  font-size: 0.64rem;
+  font-size: 0.7rem;
 }
 
 .yourway-hero__actions .button--dark {
@@ -1474,7 +1474,7 @@ a {
 
 .yourway-hero__board p {
   color: var(--yourway-orange);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -1544,7 +1544,7 @@ a {
 }
 
 .yourway-upcoming__date {
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.22em;
   text-transform: uppercase;
@@ -1840,7 +1840,7 @@ a {
 }
 
 .yourway-board__date span {
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.26em;
   text-transform: uppercase;
