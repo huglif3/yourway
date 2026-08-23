@@ -3024,3 +3024,19 @@ a {
   font-size: 0.82rem;
   color: rgb(var(--ink-rgb) / 0.78);
 }
+
+/* Every campaign piece closes on the shared line. */
+.fyw-close {
+  margin: 0;
+  padding: 44px 20px 52px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.fyw-close span {
+  color: rgb(var(--ink-rgb) / 0.55);
+  padding: 0 4px;
+}
