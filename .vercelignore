@@ -1,2 +1,8 @@
-# Working material, not part of the deployed site.
+# Working material and internal docs — never part of the deployed site.
 brand/
+docs/
+scripts/
+.github/
+.claude/
+CLAUDE.md
+README.md

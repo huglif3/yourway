@@ -3005,8 +3005,10 @@ a {
 
 .partner-embed__notice a,
 .partner-embed__alt a {
+  color: var(--ink);
+  font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--brand-yellow);
+  text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
