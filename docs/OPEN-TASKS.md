@@ -51,9 +51,10 @@ wave-1 deliverables (docs/adr/, docs/privacy/, docs/copy/) and CLAUDE.md.
   notice is a counsel item, and the site has no privacy page yet.
 - NEEDS: Notion plan/region details · reviewer list · retention pick ·
   counsel contact/timeline.
-- ~~Exact Guava legal entity name~~ — resolved: **Grow With Guava LLC**
-  (ruling D6, 24 Aug; see `docs/copy/fact-sources.md` — written confirmation
-  on PR #1 still pending).
+- Exact Guava legal entity name — **Grow With Guava LLC** per ruling D6
+  (24 Aug, session; see `docs/copy/fact-sources.md`). Stays open until the
+  written confirmation lands on PR #1 — a GDPR controller identity is not
+  "resolved" on a chat ruling alone (cto review, round 2).
 
 ## architect — done wave 1; parked
 - ADR for Buenos Aires / Mexico City region-colour assignment (Black/White

@@ -33,5 +33,6 @@ sources; it is not itself a sign-off.
   align the master copy doc with the Brief, or overrule D4.
 - **"October 25–27" span.** The Brief folds the optional Oct 27 learning day
   into the hackathon range; the schedule ruling keeps the hackathon proper at
-  Oct 25–26. The partner page follows the Brief (its audience is partners
-  planning around all lead-up days); builder-facing copy says Oct 25–26.
+  Oct 25–26. **Both pages follow the schedule ruling and say Oct 25–26** —
+  the Brief's wider span is not an authority to change them (cto review,
+  round 2). The Oct 27 day appears separately where the schedule is listed.
