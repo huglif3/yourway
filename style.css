@@ -2116,11 +2116,11 @@ a {
   --partner-orange: var(--brand-orange);
   --partner-lime: var(--brand-lime);
   --partner-ink: var(--surface-dark);
-  --partner-orange-ink: var(--brand-orange-ink);
+  --partner-orange-ink: var(--ink);
   background:
-    radial-gradient(circle at 18% 10%, rgb(var(--brand-yellow-rgb) / 0.14), transparent 18%),
-    radial-gradient(circle at 86% 16%, rgb(var(--brand-yellow-rgb) / 0.1), transparent 18%),
-    linear-gradient(180deg, var(--surface-tint) 0%, var(--white) 100%);
+    radial-gradient(circle at 10% 6%, rgb(var(--brand-blue-rgb) / 0.2), transparent 18%),
+    radial-gradient(circle at 88% 10%, rgb(var(--brand-pink-rgb) / 0.26), transparent 18%),
+    linear-gradient(180deg, var(--surface-tint-cream) 0%, var(--surface-tint-warm) 24%, var(--white) 100%);
 }
 
 .partner-hero,
@@ -2134,6 +2134,7 @@ a {
 .partner-metrics,
 .partner-next,
 .partner-formats,
+.partner-playbook,
 .partner-apply {
   width: min(100%, var(--page-width));
   margin: 0 auto;
@@ -2267,8 +2268,8 @@ a {
 }
 
 .partner-panel--pink {
-  background: var(--partner-pink);
-  color: var(--black);
+  background: var(--brand-yellow);
+  color: #000000;
 }
 
 .partner-panel--blue {
@@ -2586,8 +2587,8 @@ a {
   border-radius: 24px;
   background: rgb(var(--ink-rgb) / 0.05);
   max-width: none;
-  columns: 3 38ch;
-  column-gap: 44px;
+  columns: 2 48ch;
+  column-gap: 48px;
 }
 
 .partner-beats {
@@ -3040,6 +3041,7 @@ a {
 
   .partner-beats,
   .partner-intro,
+  .partner-playbook,
   .partner-opportunity,
   .partner-model,
   .partner-rules,
@@ -3263,6 +3265,63 @@ a {
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--partner-orange-ink);
+}
+
+.partner-goal a,
+.partner-lede a,
+.partner-steps a,
+.partner-formats__own a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+/* The single-source-of-truth band: everything trimmed from this page lives
+   in the EXT playbook, one gold action on black. */
+.partner-playbook__band {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 30px 34px;
+  border-radius: 30px;
+  background: var(--partner-ink);
+  color: var(--white);
+}
+
+.partner-playbook__band p {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: rgb(var(--white-rgb) / 0.88);
+}
+
+.partner-playbook__cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 26px;
+  border-radius: 999px;
+  background: var(--brand-yellow);
+  color: #000000;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 820px) {
+  .partner-playbook__band {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: start;
+  }
 }
 
 .partner-formats__own {
