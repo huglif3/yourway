@@ -3119,3 +3119,17 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Region rows for the live board (colour identifies region, black text
+   throughout — every region fill clears 4.9:1 with ink). */
+.yourway-board__row--r01 { background: var(--brand-yellow); color: #000000; }
+.yourway-board__row--r02 { background: #8a7fcc; color: #000000; }
+.yourway-board__row--r03 { background: #4f98bf; color: #000000; }
+.yourway-board__row--r04 { background: var(--region-spain); color: #000000; }
+.yourway-board__row--r01 .button--yellow,
+.yourway-board__row--r02 .button--yellow,
+.yourway-board__row--r03 .button--yellow,
+.yourway-board__row--r04 .button--yellow {
+  background: #000000;
+  color: var(--brand-yellow);
+}
