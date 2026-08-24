@@ -9,18 +9,25 @@ self-described "single source of truth" for activations), which supersedes
 the Brief where they differ. "Ruling D#" = a numbered decision the team gave
 in the project session, 23–24 Aug 2026.
 
-## V2 Playbook figures now on the page (supersede the Brief)
+## Playbook figures now on the page (supersede the Brief)
 
-| Claim | V2 Playbook section | Replaced (Brief) |
+The Playbook was renamed **"EXT - Your Way Activation Playbook"** on 24 Aug —
+the external, partner-facing cut, confirmed by the team as fully verified
+("everything here is full proof"). The page mirrors the EXT version.
+
+| Claim | EXT Playbook section | Replaced |
 |---|---|---|
-| 400–500 builders at HackMeridian | §00/§04 | 250+ programme goal |
-| Genesis prize pool $20k+ | §04 track table | $30k+ |
-| Scale: $10k in cash prizes | §04 track table | "Cash Prizes TBD" |
-| Proposal deadline Friday, September 4, 2026 | §03 callout | — (new) |
+| 400–500 builders at HackMeridian | §00/§04 | Brief's 250+ programme goal |
+| Prizes "paid in XLM on Stellar", both tracks, no dollar amounts | §04 track table | V2's $20k+/$10k figures and the Brief's $30k+ — EXT removed all prize amounts |
+| Proposal deadline Friday, September 4, 2026; window Sept–Oct; unconfirmed markets extend search to mid-September | §03 | — (new) |
+| Activation partners must be based in the EU/UK; non-EU markets are Guava-led | §03 | — (new) |
 | HackMeridian applications close October 19, 2026 | §04/§05 | — (new) |
-| Minimum conversion 20% · strong 35%+ | §03 Measuring success | 10% · 25%+ |
-| Activation budgets $500–$12,000, grant-and-reimbursement payout | §03 | — (new; the market/allocation table and partner names stay OFF the page per the standing "no markets and budgets" ruling and the anonymity note inside it) |
-| Travel grant tiers $150 / $350 / $600 / $1,000 (Local/Regional/Extended/Long-haul), separate pool, demo-day shortlist, tier by geography+need | §05 | consistent with the Attendance Support rulings; see conflict note below |
+| Minimum conversion 20% · strong 35%+ | §03 Measuring success | Brief's 10% · 25%+ |
+| Returned-for-revision proposals resubmit within 48 hours | §03 | — (new) |
+| Budget covers outreach/facilitation/prizes; grant-and-reimbursement payout, no lump sum | §03 | V2's $500–$12,000 range — EXT removed it, and the market/allocation table with partner names stays off the page (standing ruling + anonymity note) |
+| Travel grant tiers $150 / $350 / $600 / $1,000, separate pool, demo-day shortlist, tier by geography+need; XLM payout, rate fixed on decision date; KYC handled entirely by Guava; wave approvals | §05 | consistent with the Attendance Support rulings; see conflict note below |
+| Predominantly English with translators onsite; teams 1–5, solo builders welcome | §04/§05 | — (new) |
+| Contact: Feems, Guava's hackathon programme manager | §03 callout | "your Guava contact" |
 | "No Route 01, 02, 03 — builders choose their own route" | §01 | V1's "frame as YOUR WAY 01 / city" hero-card framing (removed) |
 
 **Record status:** the D rulings were given in the project session, not on
