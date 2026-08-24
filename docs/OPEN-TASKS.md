@@ -50,7 +50,10 @@ wave-1 deliverables (docs/adr/, docs/privacy/, docs/copy/) and CLAUDE.md.
 - A real privacy notice page — the form's minimum notice is live, the full
   notice is a counsel item, and the site has no privacy page yet.
 - NEEDS: Notion plan/region details · reviewer list · retention pick ·
-  counsel contact/timeline · exact Guava legal entity name.
+  counsel contact/timeline.
+- ~~Exact Guava legal entity name~~ — resolved: **Grow With Guava LLC**
+  (ruling D6, 24 Aug; see `docs/copy/fact-sources.md` — written confirmation
+  on PR #1 still pending).
 
 ## architect — done wave 1; parked
 - ADR for Buenos Aires / Mexico City region-colour assignment (Black/White

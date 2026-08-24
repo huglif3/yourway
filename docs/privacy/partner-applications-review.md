@@ -113,8 +113,9 @@ copies** and to any exports, not just the Notion rows.
 identity, no purpose statement, no mention of where the data goes. Before
 the Notion form ships, the form page must state, at minimum:
 
-- **Controller identity:** Guava (full legal name and contact — the legal
-  entity name needs confirming; see controllership question for counsel).
+- **Controller identity:** **Grow With Guava LLC** (ruling D6, 24 Aug —
+  written confirmation on PR #1 pending; the controllership *model* question
+  for counsel below remains open regardless).
 - **Purpose:** evaluating activation partner proposals for HackMeridian
   2026 and contacting applicants about them.
 - **Notion named as processor** (and storage location once verified), plus
@@ -242,8 +243,9 @@ HackMeridian/SDF-adjacent systems.
   to data subjects.
 - **Option C — Separate/independent controllers** for their respective
   stages, with a data-sharing agreement covering any personal-data handoff.
-- Whichever is chosen determines whose name goes in every privacy notice —
-  also confirm the **exact legal entity** behind "Guava" for the notices.
+- Whichever is chosen determines whose name goes in every privacy notice.
+  The entity behind "Guava" is **Grow With Guava LLC** (ruling D6, 24 Aug;
+  the notices now use it) — counsel still owns the controllership model.
 
 ### Q5 — EAA micro-enterprise exemption and this site
 
