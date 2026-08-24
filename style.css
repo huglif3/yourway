@@ -3040,3 +3040,82 @@ a {
   color: rgb(var(--ink-rgb) / 0.55);
   padding: 0 4px;
 }
+
+/* ---------------------------------------------------------------------------
+   Template hero — the landing page as a campaign piece (production notes:
+   info bar on one long edge, artwork the rest; odd piece = bar on top).
+   Pieces 29–31 are adjacent crops of the master, so the strip reads MERI.
+   --------------------------------------------------------------------------- */
+.tpl-hero {
+  width: 100%;
+  background: var(--white);
+}
+
+.tpl-hero__bar {
+  width: min(100%, var(--page-width));
+  margin: 0 auto;
+  padding: 30px 20px 26px;
+  display: grid;
+  gap: 8px;
+  border-top: 1px solid var(--ink);
+}
+
+.tpl-hero__id {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.tpl-hero__title {
+  margin: 2px 0 0;
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.tpl-hero__lede {
+  margin: 6px 0 0;
+  max-width: 52ch;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.tpl-hero__op {
+  margin: 4px 0 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brand-orange-ink);
+}
+
+.tpl-hero__action {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.tpl-hero__strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tpl-hero__strip img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 620px) {
+  .tpl-hero__strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

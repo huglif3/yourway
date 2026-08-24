@@ -47,6 +47,22 @@ ground. The guide pairs gold with black throughout, and the event templates
 put white text on black rather than anything on gold. Any gold surface on the
 site needs black text.
 
+## Production notes (Figma, 23 Aug)
+
+Newer than the delivered PDFs; Figma overrides where they differ.
+
+- **One region keeps one dominant colour; every tile uses the shared
+  composition.** The knockout photography is the main hackmeridian.com
+  landing imagery (trams, Marvila streets) — one thread across all surfaces.
+- **Identify events with `R## + P##/YY`.**
+- **File naming: `HM26_R##_P##-YY_CITY_CHANNEL_LANG_v##`.**
+- **Info bars come white as well as black** in the current Figma templates
+  (the delivered PDFs are all black-bar). Same fields either way.
+- **The site speaks this language now**: the landing hero is built as a
+  template piece — white info bar on top (odd-piece rule), pieces 29–31 as
+  the artwork strip (adjacent crops, so it reads MERI). Web-ready tiles live
+  in `/assets/pieces/`.
+
 ## Campaign system
 
 Every event is a **numbered crop** of one continuous composition. Colour
