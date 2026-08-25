@@ -2135,6 +2135,7 @@ a {
 .partner-next,
 .partner-formats,
 .partner-playbook,
+.partner-facts,
 .partner-apply {
   width: min(100%, var(--page-width));
   margin: 0 auto;
@@ -3042,6 +3043,7 @@ a {
   .partner-beats,
   .partner-intro,
   .partner-playbook,
+  .partner-facts,
   .partner-opportunity,
   .partner-model,
   .partner-rules,
@@ -3277,6 +3279,67 @@ a {
   text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
+}
+
+/* The essentials: six facts a partner needs before anything else. */
+.partner-facts {
+  padding-top: 0;
+}
+
+.partner-facts__row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partner-facts__row li {
+  display: grid;
+  gap: 6px;
+  align-content: start;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: rgb(var(--ink-rgb) / 0.05);
+}
+
+.partner-facts__row strong {
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.partner-facts__row span {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: rgb(var(--ink-rgb) / 0.78);
+}
+
+.partner-format__stats {
+  margin-top: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(var(--ink-rgb) / 0.14);
+  font-size: 0.78rem !important;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.partner-apply__report {
+  font-size: 0.9rem !important;
+  color: rgb(var(--ink-rgb) / 0.75);
+}
+
+@media (max-width: 1120px) {
+  .partner-facts__row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .partner-facts__row {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* The single-source-of-truth band: everything trimmed from this page lives
