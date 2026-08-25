@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Unlisted campaign surface per PRD: keep out of search indexes. -->
+  <meta name="robots" content="noindex, nofollow" />
   <title>Find Your Way to HackMeridian</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,7 +15,7 @@
     </a>
     <nav class="site-nav" aria-label="Primary">
       <a href="#journey">Journey</a>
-      <a href="#activations">Activations</a>
+      <a href="#events">Activations</a>
       <a href="#partners">Partners</a>
       <a href="#faq">FAQ</a>
       <a class="site-nav__cta" href="#events">Find an Event</a>
@@ -21,37 +23,24 @@
   </header>
 
   <main id="top">
-    <section class="hero yourway-hero">
-      <div class="hero__inner">
-        <div class="hero__panel hero__panel--copy yourway-hero__copy">
-          <div class="yourway-hero__terrain yourway-hero__terrain--one" aria-hidden="true"></div>
-          <div class="yourway-hero__terrain yourway-hero__terrain--two" aria-hidden="true"></div>
-          <p class="eyebrow">Guava Global x Stellar</p>
-          <h1>Find your way</h1>
-          <p class="hero__lede">
-            Regional activations start the route. Learn Stellar, meet builders,
-            ship faster, and earn your path toward Lisbon in October 2026.
-          </p>
-          <p class="hero__meta">September-October 2026 · Europe + Online</p>
+    <section class="tpl-hero" aria-label="Find your way — a HackMeridian 2026 campaign">
+      <div class="tpl-hero__bar">
+        <p class="tpl-hero__id">Your way 2026 · R01–R06 · Campaign</p>
+        <h1 class="tpl-hero__title">Find your way</h1>
+        <p class="tpl-hero__lede">
+          Regional activations start the route. Learn Stellar, meet builders,
+          and earn your path toward Lisbon in October 2026.
+        </p>
+        <p class="tpl-hero__op">September–October 2026 · In person + online</p>
+        <div class="tpl-hero__action">
+          <a class="button button--dark" href="#events">Find an event</a>
+          <a class="yourway-hero__alt" href="#partners">Host an activation</a>
         </div>
-        <div class="hero__panel hero__panel--image yourway-hero__image">
-          <div class="yourway-hero__cta-stage">
-            <div class="yourway-hero__actions">
-              <a class="button button--dark" href="#events">Find an event</a>
-              <a class="button button--yellow" href="#partners">Host an activation</a>
-            </div>
-            <ul class="yourway-hero__tags" aria-label="Journey highlights">
-              <li>You are here</li>
-              <li>Builder sessions</li>
-              <li>Travel grant path</li>
-            </ul>
-          </div>
-          <div class="yourway-hero__board">
-            <p>Route Open</p>
-            <strong>Spain Sessions</strong>
-            <span>Barcelona → Madrid → Online</span>
-          </div>
-        </div>
+      </div>
+      <div class="tpl-hero__strip" role="img" aria-label="Three pieces of the MERIDIAN puzzle — the wordmark cut from Lisbon photography over gold, terracotta and jacaranda tiles">
+        <img src="assets/pieces/piece-29.jpg" alt="" width="720" height="720" />
+        <img src="assets/pieces/piece-30.jpg" alt="" width="720" height="720" />
+        <img src="assets/pieces/piece-31.jpg" alt="" width="720" height="720" />
       </div>
     </section>
 
@@ -61,24 +50,14 @@
           <p class="stats__eyebrow">Upcoming events</p>
           <h2 class="stats__heading">Next stops on the route</h2>
         </div>
-        <article class="yourway-upcoming__event">
-          <p class="yourway-upcoming__date">September 3, 2026</p>
-          <h3>Find Your Way: Stellar</h3>
-          <p>Virtual online announcement</p>
-          <span>RSVP coming soon</span>
-        </article>
-        <article class="yourway-upcoming__event">
-          <p class="yourway-upcoming__date">September 9, 2026</p>
-          <h3>Onboarding to Stellar in 30 minutes</h3>
-          <p>Lisbon, Portugal</p>
-          <span>RSVP coming soon</span>
-        </article>
-        <article class="yourway-upcoming__event">
-          <p class="yourway-upcoming__date">September 18, 2026</p>
-          <h3>Onboarding to Stellar in 30 minutes</h3>
-          <p>Barcelona, Spain</p>
-          <span>RSVP coming soon</span>
-        </article>
+        <div class="yourway-upcoming__soon">
+          <p class="yourway-upcoming__date">Coming soon</p>
+          <p>
+            Stops are listed here once their Luma registration page is live.
+            Nothing is bookable yet.
+          </p>
+          <a href="#registration-updates">Get notified</a>
+        </div>
       </div>
     </section>
 
@@ -96,19 +75,19 @@
         </article>
         <article class="yourway-stop">
           <span class="yourway-stop__dot"></span>
-          <p class="yourway-stop__label">Step 01</p>
+          <p class="yourway-stop__label">Way 01</p>
           <h3>Join an activation</h3>
           <p>Attend a Stellar onboarding, hack night, founder meetup, campus event, or after-work session.</p>
         </article>
         <article class="yourway-stop">
           <span class="yourway-stop__dot"></span>
-          <p class="yourway-stop__label">Step 02</p>
+          <p class="yourway-stop__label">Way 02</p>
           <h3>Build on Stellar</h3>
           <p>Use workshops, curriculum, mentors, and live support to move from first contact to shipped work.</p>
         </article>
         <article class="yourway-stop">
           <span class="yourway-stop__dot"></span>
-          <p class="yourway-stop__label">Step 03</p>
+          <p class="yourway-stop__label">Way 03</p>
           <h3>Get referred</h3>
           <p>Partner hosts, Stellar employees, and ambassadors help identify builders ready for the next step.</p>
         </article>
@@ -116,7 +95,7 @@
           <span class="yourway-stop__dot"></span>
           <p class="yourway-stop__label">Destination</p>
           <h3>Join us in Lisbon</h3>
-          <p>Selected builders move into the HackMeridian path and later into travel support review.</p>
+          <p>Build something worth shipping — two days in Lisbon, October 25–26, then Meridian. Selected builders move into attendance support review.</p>
         </article>
       </div>
       <div class="yourway-journey__terrain" aria-hidden="true">
@@ -133,8 +112,8 @@
           <h2>Start with the Spain route.</h2>
         </div>
         <p class="yourway-events__note">
-          Portugal, France, Germany, Poland, and the UK routes are coming next.
-          Registration links will be added as each stop goes live.
+          Portugal, France, the UK, Buenos Aires, and Mexico City are coming
+          next. Registration links will be added as each stop goes live.
         </p>
       </div>
 
@@ -142,95 +121,44 @@
         <span class="yourway-region yourway-region--live">Spain</span>
         <span class="yourway-region">Portugal</span>
         <span class="yourway-region">France</span>
-        <span class="yourway-region">Germany</span>
-        <span class="yourway-region">Poland</span>
+        <span class="yourway-region">Buenos Aires</span>
+        <span class="yourway-region">Mexico City</span>
         <span class="yourway-region">UK</span>
       </div>
 
-      <div class="yourway-board" aria-label="Spain activation board">
-        <article class="yourway-board__row yourway-board__row--blue">
-          <div class="yourway-board__date">
-            <span>Fri</span>
-            <strong>18 Sep</strong>
-          </div>
+      <!--
+        Planned Spain schedule, held back until each stop has a live Luma page.
+        Restore a row here as its registration opens:
+          Fri 18 Sep · Barcelona · Round 1 Onboarding to Stellar
+                       18:00-21:00, after European Blockchain Convention
+          Sat 19 Sep · Madrid    · Round 1 Onboarding to Stellar
+                       11:00-15:00, builders brunch
+          Thu 01 Oct · Madrid    · Round 2 From Build to Shipping, 18:00-21:00
+          Fri 02 Oct · Barcelona · Round 2 From Build to Shipping, 18:00-21:00
+          Week of 05 Oct · Online · Workshop + Road to Lisbon Q&A, time TBC
+      -->
+      <div class="yourway-board" aria-label="Activation board — live events from Luma">
+        <!-- LUMA:EVENTS:START -->
+        <article class="yourway-board__row yourway-board__row--soon">
           <div class="yourway-board__main">
-            <p class="yourway-board__city">Barcelona</p>
-            <h3>Round 1 · Onboarding to Stellar</h3>
-            <p>18:00-21:00 · Evening session right after European Blockchain Convention</p>
+            <p class="yourway-board__city">Spain route</p>
+            <h3>Stops open here as they go live</h3>
+            <p>
+              Barcelona, Madrid, and an online closing session are being
+              scheduled for September and October. Each one appears on this
+              board the moment its Luma registration page is live.
+            </p>
           </div>
           <div class="yourway-board__meta">
-            <span class="yourway-pill yourway-pill--yellow">Open soon</span>
-            <a class="button button--yellow" href="#registration-updates">Register</a>
+            <a class="button button--yellow" href="#registration-updates">Get notified</a>
           </div>
         </article>
-
-        <article class="yourway-board__row yourway-board__row--pink">
-          <div class="yourway-board__date">
-            <span>Sat</span>
-            <strong>19 Sep</strong>
-          </div>
-          <div class="yourway-board__main">
-            <p class="yourway-board__city">Madrid</p>
-            <h3>Round 1 · Onboarding to Stellar</h3>
-            <p>11:00-15:00 · Builders brunch</p>
-          </div>
-          <div class="yourway-board__meta">
-            <span class="yourway-pill yourway-pill--river">Builders brunch</span>
-            <a class="button button--yellow" href="#registration-updates">Register</a>
-          </div>
-        </article>
-
-        <article class="yourway-board__row yourway-board__row--orange">
-          <div class="yourway-board__date">
-            <span>Thu</span>
-            <strong>1 Oct</strong>
-          </div>
-          <div class="yourway-board__main">
-            <p class="yourway-board__city">Madrid</p>
-            <h3>Round 2 · From Build to Shipping</h3>
-            <p>18:00-21:00 · Evening session</p>
-          </div>
-          <div class="yourway-board__meta">
-            <span class="yourway-pill yourway-pill--terracotta">Round 2</span>
-            <a class="button button--yellow" href="#registration-updates">Register</a>
-          </div>
-        </article>
-
-        <article class="yourway-board__row yourway-board__row--lime">
-          <div class="yourway-board__date">
-            <span>Fri</span>
-            <strong>2 Oct</strong>
-          </div>
-          <div class="yourway-board__main">
-            <p class="yourway-board__city">Barcelona</p>
-            <h3>Round 2 · From Build to Shipping</h3>
-            <p>18:00-21:00 · Evening session</p>
-          </div>
-          <div class="yourway-board__meta">
-            <span class="yourway-pill yourway-pill--terracotta">Round 2</span>
-            <a class="button button--yellow" href="#registration-updates">Register</a>
-          </div>
-        </article>
-
-        <article class="yourway-board__row yourway-board__row--cream">
-          <div class="yourway-board__date">
-            <span>Week of</span>
-            <strong>5 Oct</strong>
-          </div>
-          <div class="yourway-board__main">
-            <p class="yourway-board__city">Online</p>
-            <h3>Workshop + Road to Lisbon Q&amp;A</h3>
-            <p>TBC · Open to all of Spain as the closing session</p>
-          </div>
-          <div class="yourway-board__meta">
-            <span class="yourway-pill yourway-pill--jacaranda">Online</span>
-            <a class="button button--yellow" href="#registration-updates">Register</a>
-          </div>
-        </article>
+        <!-- LUMA:EVENTS:END -->
       </div>
+
     </section>
 
-    <section class="grid grid--support yourway-benefits">
+    <section class="grid grid--support yourway-benefits" id="partners">
       <div class="grid--support__inner">
         <article class="support support--black">
           <h2>Build local. Arrive ready.</h2>
@@ -262,19 +190,6 @@
       </div>
     </section>
 
-    <section class="yourway-partners" id="partners">
-      <div class="yourway-partners__intro">
-        <p class="eyebrow">Host the journey</p>
-        <h2>Bring your city onto the map.</h2>
-        <p>
-          Partners can host activations that create local builder momentum and
-          feed qualified talent into HackMeridian. Ready to bring your city
-          into the route?
-        </p>
-      </div>
-      <a class="yourway-partners__link" href="partner/">Open partner application</a>
-    </section>
-
     <section class="yourway-resources" id="registration-updates">
       <div class="yourway-resources__copy">
         <p class="eyebrow">For builders</p>
@@ -285,9 +200,9 @@
         </p>
       </div>
       <div class="yourway-resources__links">
-        <a class="yourway-resource" href="index.html">
+        <a class="yourway-resource" href="https://hackmeridian.com">
           <strong>About HackMeridian</strong>
-          <span>See the main event page and October destination.</span>
+          <span>Build something worth shipping. October 25–26, 2026 · Lisbon, Portugal.</span>
         </a>
         <a class="yourway-resource" href="https://stellar.org/developers">
           <strong>Build on Stellar</strong>
@@ -319,10 +234,12 @@
         <p>No. Some sessions are designed to onboard builders to Stellar, while later rounds focus on moving ideas closer to shipping.</p>
       </details>
       <details class="faq__item">
-        <summary>Is this the travel grant application page?</summary>
-        <p>No. Travel support will have a separate application flow later. This page is for activations, event discovery, and host applications.</p>
+        <summary>Is this the attendance support application page?</summary>
+        <p>No. HackMeridian Attendance Support has its own application flow. This page is for activations, event discovery, and host applications.</p>
       </details>
     </section>
+
+    <p class="fyw-close">Find your way <span aria-hidden="true">→</span> HackMeridian</p>
   </main>
 
   <footer class="site-footer">

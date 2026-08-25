@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Partner Application - Find your way</title>
+  <!-- Unlisted campaign surface per PRD: keep out of search indexes. -->
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Host an Activation - Find your way</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body class="partner-page">
@@ -12,10 +14,9 @@
       <img class="brand__logo" src="../assets/event-icon.png" alt="HackMeridian 2026 Lisbon" />
     </a>
     <nav class="site-nav" aria-label="Primary">
-      <a href="/#events">Events</a>
-      <a href="/#journey">Journey</a>
-      <a href="#apply">Apply</a>
-      <a class="site-nav__cta" href="/">Back to route</a>
+      <a href="#model">Model</a>
+      <a href="#formats">Formats</a>
+      <a class="site-nav__cta" href="#apply">Apply</a>
     </nav>
   </header>
 
@@ -23,178 +24,205 @@
     <section class="partner-hero">
       <div class="partner-hero__inner">
         <div class="partner-hero__copy">
-          <p class="eyebrow">Host the journey</p>
-          <h1>Bring your city onto the map.</h1>
+          <p class="eyebrow">Host an activation</p>
+          <h1>Your activation is a route.</h1>
           <p class="partner-hero__lede">
-            Partners host regional activations that create local builder
-            momentum and feed qualified talent into HackMeridian.
+            No single prescribed path leads into HackMeridian. Your event — a
+            workshop, a founder night, a mini-hack — is one entry point among
+            many, not a checkpoint on a roadshow.
           </p>
           <p class="partner-hero__meta">
-            Community-led activations · September-October 2026
+            Guava Global × Stellar Development Foundation · September-October 2026
           </p>
         </div>
         <div class="partner-hero__card">
-          <p>Best fit</p>
-          <strong>Developer communities, campus groups, founder networks, and local ecosystem operators.</strong>
-          <span>Submit your activation proposal and tell us how you will convene builders in your city.</span>
+          <p>Proposal deadline</p>
+          <strong>Friday, September 4, 2026</strong>
+          <span>
+            Submit through the application on this page. Feems, Guava's
+            hackathon programme manager, will reach out with questions or
+            confirmation — proposals are reviewed within 5 business days.
+          </span>
+          <a class="partner-hero__card-cta" href="#apply">Go to the application</a>
         </div>
       </div>
     </section>
 
-    <section class="partner-overview">
+    <section class="partner-facts" aria-label="The essentials">
+      <ul class="partner-facts__row">
+        <li><strong>Oct 25-26</strong><span>HackMeridian, Lisbon — Meridian follows Oct 28-29</span></li>
+        <li><strong>400-500</strong><span>builders building on Stellar over two days</span></li>
+        <li><strong>Sept-Oct</strong><span>the activation window — local workshops and mini-hacks, run by you</span></li>
+        <li><strong>EU / UK</strong><span>partner eligibility — non-EU markets run as Guava-led activations</span></li>
+        <li><strong>Oct 19</strong><span>HackMeridian applications close</span></li>
+        <li><strong>20%</strong><span>minimum conversion of attendees to registrations — 35%+ is strong</span></li>
+      </ul>
+    </section>
+
+    <section class="partner-model" id="model">
       <div class="partner-overview__intro">
-        <p class="eyebrow">What this page covers</p>
-        <h2>Everything needed to host the route.</h2>
+        <p class="eyebrow">The delegated model</p>
+        <h2>You run the activation. We run the infrastructure.</h2>
+        <p class="partner-lede">
+          One partner, one market, multiple focused activations.
+        </p>
       </div>
-      <div class="partner-overview__grid">
+      <div class="partner-overview__grid partner-overview__grid--two">
         <article class="partner-panel partner-panel--pink">
-          <h3>What partners receive</h3>
+          <h3>You provide</h3>
           <ul>
-            <li>Branding support</li>
-            <li>Curriculum and session framing</li>
-            <li>Co-marketing support</li>
-            <li>Technical mentor coverage</li>
-            <li>Grant pathway context</li>
+            <li>Community access and targeted recruitment</li>
+            <li>Venue and event execution</li>
+            <li>Local promotion and personal follow-up</li>
+            <li>Prizes, if you are running a mini-hack</li>
+            <li>A facilitator sourced locally, so delivery is in your community's native language</li>
           </ul>
         </article>
         <article class="partner-panel partner-panel--blue">
-          <h3>What partners deliver</h3>
+          <h3>Guava provides</h3>
           <ul>
-            <li>Local venue or community distribution</li>
-            <li>Strong RSVP and show-up rate</li>
-            <li>Participant emails and follow-up</li>
-            <li>GitHub repos or project links</li>
-            <li>Short event retro and outcomes</li>
-          </ul>
-        </article>
-        <article class="partner-panel partner-panel--black">
-          <h3>Who should apply</h3>
-          <ul>
-            <li>Developer communities</li>
-            <li>Campus groups</li>
-            <li>Founder networks</li>
-            <li>Ecosystem operators</li>
-            <li>Experienced local event hosts</li>
+            <li>Content library — workshops, slides, tutorials — for your facilitator to deliver</li>
+            <li>Funnel tracking links, QR codes, registration materials</li>
+            <li>Travel grant allocation and disbursement</li>
           </ul>
         </article>
       </div>
+      <div class="partner-rules__grid">
+        <article class="partner-rule">
+          <p class="partner-rule__num">01</p>
+          <h3>Qualification moment</h3>
+          <p>A pitch, scoped-idea form, standup, or demo that separates serious builders from curious observers.</p>
+        </article>
+        <article class="partner-rule">
+          <p class="partner-rule__num">02</p>
+          <h3>Conversion moment</h3>
+          <p>A specific, tracked ask to register for HackMeridian, live in the room.</p>
+        </article>
+        <article class="partner-rule">
+          <p class="partner-rule__num">03</p>
+          <h3>48-hour follow-up</h3>
+          <p>Registration link, travel grant info, and next steps to every attendee within 48 hours.</p>
+        </article>
+      </div>
+      <p class="partner-goal">
+        <strong>Your budget</strong> covers outreach, facilitation, and prizes —
+        paid by grant application and reimbursement, never a lump sum.
+        <strong>Travel grants are a separate Guava-held pool</strong> — four
+        tiers from $150 to $1,000, assigned on travel geography and need,
+        shortlisted on demo-day performance. Full mechanics in the
+        <a href="https://growwithguava.notion.site/EXT-Your-Way-Activation-Playbook-3c465b4bc7e481a6898ef8035511e52d"
+           target="_blank" rel="noopener">Activation Playbook</a>.
+      </p>
     </section>
 
-    <section class="partner-formats">
+    <section class="partner-formats" id="formats">
       <div class="partner-formats__copy">
-        <p class="eyebrow">Activation formats</p>
-        <h2>Choose the format that fits your city.</h2>
+        <p class="eyebrow">Choose your format</p>
+        <h2>Three formats. Pick the one your community fits.</h2>
         <p>
-          We are supporting virtual workshops, hack nights, founder meetups,
-          campus events, and after-work community sessions.
+          Genesis is for first-time builders validating a new idea; Scale is
+          for experienced teams with something already shipped.
         </p>
       </div>
-      <div class="partner-formats__list">
-        <span>Virtual workshop</span>
-        <span>Hack night</span>
-        <span>Founder meetup</span>
-        <span>Campus event</span>
-        <span>After-work happy hour</span>
+      <div class="partner-rules__grid">
+        <article class="partner-rule">
+          <h3>Mini-Hack Weekend</h3>
+          <p>Structured entry for communities new to Stellar — workshops day one, build and demo day two.</p>
+          <p class="partner-format__stats">Genesis · 30-60 attendees · 8-15 applications (25-30%)</p>
+        </article>
+        <article class="partner-rule">
+          <h3>IRL Event Series</h3>
+          <p>For partners with reach across venues or institutions who can sustain momentum over 3-5 weeks.</p>
+          <p class="partner-format__stats">Genesis + Scale · 150-300 cumulative · 10-20 at demo night</p>
+        </article>
+        <article class="partner-rule">
+          <h3>Scale Founder Evening</h3>
+          <p>Invite-only evening for founders who have shipped a product. No workshops.</p>
+          <p class="partner-format__stats">Scale · 15-30 attendees · 6-12 applications (30-50%)</p>
+        </article>
+      </div>
+      <p class="partner-formats__own">
+        Community doesn't fit one of these three shapes? Propose your own
+        format in the application — just show the same qualification and
+        conversion moments.
+      </p>
+    </section>
+
+    <section class="partner-playbook" aria-label="The full playbook">
+      <div class="partner-playbook__band">
+        <p>
+          This page is the outline. What is Stellar, the tracks and prizes,
+          formats in depth, the workshop menu, grant mechanics, brand assets,
+          and reporting templates live in the EXT Activation Playbook — the
+          single source of truth for every activation.
+        </p>
+        <a class="partner-playbook__cta"
+           href="https://growwithguava.notion.site/EXT-Your-Way-Activation-Playbook-3c465b4bc7e481a6898ef8035511e52d"
+           target="_blank" rel="noopener">Read the Activation Playbook</a>
       </div>
     </section>
 
     <section class="partner-apply" id="apply">
-      <div class="partner-apply__intro">
-        <p class="eyebrow">Partner application</p>
-        <h2>Submit your activation proposal.</h2>
-        <p>
-          This version can collect all application details in one place now.
-          Storage and delivery can be upgraded later without changing the
-          content structure.
-        </p>
+      <div class="partner-apply__head">
+        <div class="partner-apply__intro">
+          <p class="eyebrow">The proposal</p>
+          <h2>Submit your activation proposal.</h2>
+          <p>
+            Answer eight questions, clearly and specifically.
+            <strong>Deadline: Friday, September 4, 2026.</strong>
+          </p>
+          <ul class="partner-outcomes">
+            <li><strong>Approved</strong> — every question answered with specific, credible detail.</li>
+            <li><strong>Returned for revision</strong> — not specific enough. Resubmit within 48 hours to stay in the cycle.</li>
+            <li><strong>Declined</strong> — no demonstrable reach to the target builder profile, or no KPI targets set.</li>
+          </ul>
+          <p class="partner-apply__sla">Reviewed within 5 business days.</p>
+          <p class="partner-apply__report">
+            Approved partners return a post-event report — actuals against
+            targets, plus a travel-grant shortlist — within 7 days of their
+            activation.
+          </p>
+        </div>
+        <ol class="partner-questions" aria-label="The eight questions the application asks">
+          <li>Who exactly is your target community? Name the specific group, not a generic category.</li>
+          <li>Which track are you targeting — Genesis, Scale, or both — and why does your community map to it?</li>
+          <li>What format are you running, and why is it right for this audience?</li>
+          <li>What is your qualification moment?</li>
+          <li>What is your conversion moment, and when does it happen?</li>
+          <li>Which content modules from Guava's library will you use, and who is your local facilitator?</li>
+          <li>What are your specific KPI targets — attendance, qualified builders, registrations, applications?</li>
+          <li>What are your specific dates, and your budget breakdown?</li>
+        </ol>
       </div>
 
-      <form
-        class="partner-form"
-        action="mailto:meridian@growwithguava.com?subject=Road%20to%20Lisbon%20Partner%20Application"
-        method="post"
-        enctype="text/plain"
-      >
-        <label>
-          Organization name
-          <input type="text" name="Organization name" required />
-        </label>
-        <label>
-          Contact full name
-          <input type="text" name="Contact full name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="Email" required />
-        </label>
-        <label>
-          Phone or WhatsApp
-          <input type="text" name="Phone or WhatsApp" />
-        </label>
-        <label>
-          Country
-          <input type="text" name="Country" required />
-        </label>
-        <label>
-          City
-          <input type="text" name="City" required />
-        </label>
-        <label>
-          Organization type
-          <input type="text" name="Organization type" placeholder="Community, campus, founder network, studio..." />
-        </label>
-        <label>
-          Preferred activation format
-          <select name="Preferred activation format" required>
-            <option value="">Select one</option>
-            <option>Virtual workshop</option>
-            <option>Hack night</option>
-            <option>Founder meetup</option>
-            <option>Campus event</option>
-            <option>After-work happy hour</option>
-          </select>
-        </label>
-        <label>
-          Proposed event date or range
-          <input type="text" name="Proposed event date or range" placeholder="Example: Week of October 12" />
-        </label>
-        <label>
-          Expected attendee count
-          <input type="text" name="Expected attendee count" />
-        </label>
-        <label class="partner-form__full">
-          Who is your target audience?
-          <textarea name="Target audience" rows="3"></textarea>
-        </label>
-        <label class="partner-form__full">
-          Why are you a strong host for this activation?
-          <textarea name="Why are you a strong host?" rows="4" required></textarea>
-        </label>
-        <label class="partner-form__full">
-          What local distribution or community channels do you have?
-          <textarea name="Distribution channels" rows="3"></textarea>
-        </label>
-        <label class="partner-form__full">
-          What support do you need from Guava and Stellar?
-          <textarea name="Support needed" rows="3"></textarea>
-        </label>
-        <label class="partner-form__full">
-          Can you capture participant emails, GitHub repos, and a post-event retro?
-          <textarea name="Reporting capability" rows="3"></textarea>
-        </label>
-        <label class="partner-form__full">
-          Website, social link, or past event page
-          <input type="url" name="Reference link" placeholder="https://..." />
-        </label>
-        <div class="partner-form__actions partner-form__full">
-          <p>
-            Submit opens an email draft to
-            <strong>meridian@growwithguava.com</strong> until backend storage is connected.
-          </p>
-          <button class="button button--dark" type="submit">Send application</button>
-        </div>
-      </form>
+      <div class="partner-embed">
+        <p class="partner-embed__notice">
+          Applications are collected by <strong>Grow With Guava LLC</strong> (data
+          controller; the company behind the Guava Global campaign name) to
+          assess activation partnerships, and are stored in
+          Notion, our processor. Questions or withdrawal:
+          <a href="mailto:meridian@growwithguava.com">meridian@growwithguava.com</a>.
+          If you name a facilitator, make sure they know you are sharing
+          their details with us. See our privacy notice for details.
+        </p>
+        <iframe
+          class="partner-embed__frame"
+          src="https://growwithguava.notion.site/ebd/200064971d70493da72e3b306de9f89e?pvs=105"
+          title="Activation partner application form"
+          width="100%"
+          height="600"
+          loading="lazy"
+          allowfullscreen
+        ></iframe>
+        <p class="partner-embed__alt">
+          Form not loading?
+          <a href="https://growwithguava.notion.site/200064971d70493da72e3b306de9f89e?pvs=105"
+             target="_blank" rel="noopener">Open the application in a new tab</a>
+        </p>
+      </div>
     </section>
+
+    <p class="fyw-close">Find your way <span aria-hidden="true">→</span> HackMeridian</p>
   </main>
 
   <footer class="site-footer">
@@ -208,5 +236,6 @@
       <a href="mailto:meridian@growwithguava.com">Contact</a>
     </div>
   </footer>
+
 </body>
 </html>

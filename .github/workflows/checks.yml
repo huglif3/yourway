@@ -1,0 +1,20 @@
+# Merge gate: the same checks that run locally (scripts/checks/) run on
+# every PR and every push to main or a claude/* branch. A red run here is
+# a real page finding — fix the page, never the threshold (see qa brief).
+name: checks
+on:
+  pull_request:
+  push:
+    branches: [main, 'claude/**']
+jobs:
+  merge-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm i --no-save playwright axe-core
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/checks/run-all.js
